@@ -1,0 +1,49 @@
+<!-- src/app/modules/admin/components/admin-dashboard/admin-dashboard.component.html -->
+
+<!-- <div class="admin-dashboard">
+    <h1>Admin Dashboard</h1>
+    <p>Welcome to the Admin Dashboard! Here you can manage users and view reports.</p>
+  
+    <div class="actions">
+      <button (click)="manageUsers()">Manage Users</button>
+      <button (click)="viewReports()">View Reports</button>
+    </div>
+  
+    <div class="reports-section" *ngIf="reportsVisible">
+      <h2>Reports</h2>
+      <ul>
+        <li *ngFor="let report of reports">{{ report }}</li>
+      </ul>
+    </div>
+  </div> -->
+
+  
+  <html>
+<head>
+
+</head>
+<body>
+    <nav class="bg-blue-600 p-4 flex items-center justify-between shadow-lg">
+          <div class=" flex items-center ">
+            <div class="w-12 h-12 bg-gray-300 rounded-full overforw-hidden">
+                <img class="w-full h-full object-cover rounded-full " src="assets\Softiwa.JPG">
+            </div>
+            <div class="text-white text-xl font-semibold ml-2">
+                Super Admin Dashboard
+            </div>
+        </div>
+        <div class="space-x-4">
+          <a  class="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition duration-300">
+            Create Tenant
+          </a>
+          <a class="text-white bg-red-600 hover:bg-red-500 px-4 py-2 rounded-lg transition duration-300" (click)="logout()">
+            Logout
+          </a>
+        </div>
+      </nav>
+      
+      <div class="p-8 bg-gray-100 min-h-screen">
+        <router-outlet></router-outlet>
+      </div>
+</body>
+</html>

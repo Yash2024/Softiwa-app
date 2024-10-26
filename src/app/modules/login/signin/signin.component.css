@@ -1,0 +1,127 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e6effc, #b8d0f9); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-box {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Box shadow for card effect */
+    border-radius: 12px;
+    overflow: hidden; /* To ensure content stays within rounded corners */
+    /* Adjust as needed */
+    height: 600px;
+    width: 1100px; /* Responsive width */
+}
+
+.left-section {
+    background-color: #f9fbfe;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+.logo img {
+    margin-top: 170px;
+    height: 180px;
+    width: 500px; /* Adjust logo size */
+}
+
+.right-section {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 40px;
+}
+
+/* .right-section h2 {
+    margin-bottom: 20px;
+    color: #333333;
+} */
+
+form {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1633c5;
+}
+
+.input-group input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    background-color: #f5faff;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0062cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    color: #666666;
+    margin: 10px 0;
+}
+.incpass{
+    color: red;
+    font-size: 10px;
+}
+.afterlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(120deg, #f0f4f8, #d9e2ec); */
+  }
+  .afterlogin img{
+    height: 600px;
+  }

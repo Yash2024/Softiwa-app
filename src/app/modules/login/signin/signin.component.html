@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+      <div class="inner-box">
+          <div class="left-section">
+              <div class="logo">
+                <img src="assets\SOFTIWA LOGO.png" alt="Logo">
+              </div>
+              
+          </div>
+          <div class="right-section">
+            <div>
+                <h2 class="text-3xl font-bold">Welcome To Softiwa!</h2>
+                <form>
+                    <div class="input-group">
+                        <label>Enter Email ID</label>
+                        <input type="email" id="email" placeholder="Enter Email" name="email" [(ngModel)]="email" (input)="validateEmail()">
+            
+                        <div *ngIf="emailError" style="color: red; font-size: 12px;">{{ emailError }}</div>
+                    </div>
+                    <div class="input-group">
+                        <label>Enter Password</label>
+                        <input type="password"  placeholder="Password" name="password" [(ngModel)]="password">
+                        <p class="incpass" *ngIf="showinc">Incorrect password. Please try again</p>
+                    </div>
+                    
+                    <button type="submit" class="btn" (click)="login()">Login</button>
+                    <button type="submit" class="btn" (click)="clear()">clear</button>
+                </form>
+            </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
