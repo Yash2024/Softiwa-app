@@ -20,7 +20,23 @@ export class UserService {
 
   private apiUrl = 'http://localhost:8080/api/users/register'; 
   constructor(private http: HttpClient) { }
-  private users: User[] = [];
+  private users: User[] = [
+    {
+      id: 1,
+      name: "admin1",
+      email:'ladudpsg@gmail.com',
+      password:'000',
+      role:'superadmin',
+
+    },
+    {
+      id: 2,
+      name: "tenant1",
+      email:'tenant1@ten.com',
+      password:'000',
+      role: 'tenant'
+    }
+  ];
 
   findByEmail(email: string): User | undefined {
     return this.users.find(u => u.email === email);

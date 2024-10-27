@@ -11,13 +11,19 @@ import { LoginModule } from './modules/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from './modules/user/user.module';
 import { AdminModule } from './modules/admin/admin.module';
+import { AddTenantComponent } from './core/components/add-tenant/add-tenant.component';
+import { TenantModule } from './modules/tenant/tenant.module';
+import { CreateBranchComponent } from './core/components/create-branch/create-branch.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    AddTenantComponent,
+    CreateBranchComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,9 @@ import { AdminModule } from './modules/admin/admin.module';
     LoginModule,
     HttpClientModule,
     UserModule,
-    AdminModule
+    AdminModule,
+    TenantModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

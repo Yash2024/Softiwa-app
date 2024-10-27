@@ -55,11 +55,11 @@ export class SigninComponent {
        console.log(user.role);
        if(user.role =='superadmin'){
         // console.log("inside");
-        this.router.navigate(['super-admin']);
+        this.router.navigate(['admin/dashboard']);
        }
        if(user.role =='tenant'){
         // console.log("inside");
-        this.router.navigate(['tenant-admin']);
+        this.router.navigate(['tenant/dashboard']);
        }
        
      }

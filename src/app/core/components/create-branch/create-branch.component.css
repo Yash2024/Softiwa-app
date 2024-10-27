@@ -1,0 +1,12 @@
+/* styles.css or branch-form.component.css */
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
